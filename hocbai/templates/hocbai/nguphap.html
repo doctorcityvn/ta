@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="{% static 'css/onsite.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <!-- icon -->
+    <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+    <title>Document</title>
+
+
+</head>
+<body>
+  <button id="baigiang" class="w3-button w3-black" ><img src="{% static 'images/thongtin.ico' %}" class="img-fluid" alt="Responsive image" style="max-height:30px; padding-left:-15px;"><div>Bài giảng</div></button>
+
+                                <button id="baitap" class="w3-button w3-black" ><img src="{% static 'images/dichvu.jpg' %}" class="img-fluid" alt="Responsive image" style="max-height:30px"><div>Bài tập</div></button>
+
+                                <button id="loikhuyen" class="w3-button w3-black" ><img src="{% static 'images/donthuoc.png' %}" class="img-fluid" alt="Responsive image" style="max-height:30px"><div>Lời khuyên</div></button>
+
+                                <button id="hoidap" class="w3-button w3-black"><img src="{% static 'images/benhsu.ico' %}" class="img-fluid" alt="Responsive image" style="max-height:30px"><div>Hỏi đáp</div></button>
+<div class="panel panel-default" id="trangnguphap" >
+
+                        <div class="panel-body" style="max-height: 750px;">
+                            <div class="col col-xs-4">
+                            <button id="moback" class="w3-button w3-black"><img src="{% static 'images/left.png' %}" style="max-height:28px">Back</button>
+                            </div>
+                            <div class="col col-xs-4">
+                            <button id="moforward" class="w3-button w3-black"><img src="{% static 'images/pause.png' %}" style="max-height:28px">Home</button>
+                            </div>
+                            <div class="col">
+
+                            <button id="mohome" class="w3-button w3-black"><img src="{% static 'images/right.png' %}" style="max-height:28px;max-width:28px">Forward</button>
+                            </div>
+                            <br/>
+                            <input class="search_input" type="text" name="searchmucluc" placeholder="Search tên bệnh nhân" align="center">
+                            <br/>
+                            <textarea class="form-control" rows="3" id="thongtinbenhsu" placeholder="Bệnh sử (diễn biến bệnh đã mắc) "></textarea>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+
+                        </div>
+
+
+                </div>
+</body>
+
+
+</html>
+
